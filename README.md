@@ -35,7 +35,7 @@ If you prefer visual learning, this is the perfect resource for you. Follow our 
 
 The platform is designed to help researchers accelerate drug discovery by leveraging cutting-edge AI models for protein folding, docking, and molecular dynamics.
 
-If you're getting started and need assistance or face any bugs, join our active Discord community. It's a place where people help each other out.
+If you're getting started and need assistance or face any bugs.
 
 
 
@@ -70,7 +70,7 @@ Make sure you have the following installed on your machine:
 ### **Cloning the Repository**
 
 ```bash
-git clone 
+git clone https://github.com/Sujitmaurya123/drug_Research_Platform.git
 cd proteinbind
 ```
 

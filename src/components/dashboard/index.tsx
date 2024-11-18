@@ -23,24 +23,27 @@ const Index: React.FC = () => {
   return (
     <>
       <div className="grid grid-cols-1 gap-4 md:grid-cols-2 md:gap-6 xl:grid-cols-4 2xl:gap-7.5">
-        <CTACard subtitle="get access to more molecules" title="Molecule Bank">
+        <CTACard subtitle="get access to more molecules" title="Molecule Bank" links="/molecule-bank">
           <AtomIcon />
         </CTACard>
         <CTACard
           subtitle="get access to more molecules"
           title="Generate Molecule"
+          links="/model"
         >
           <Network />
         </CTACard>
         <CTACard
           subtitle="get access to more molecules"
           title="Search Compounds"
+          links="/research"
         >
           <SearchIcon />
         </CTACard>
         <CTACard
           subtitle="get access to more molecules"
           title="Collaborative Research"
+          links="/message"
         >
           <MessageCircle />
         </CTACard>

@@ -1,13 +1,15 @@
 import { ArrowRight } from "lucide-react";
+import Link from "next/link";
 import React, { ReactNode } from "react";
 
 interface CTACardProps {
   title: string;
   subtitle: string;
   children: ReactNode;
+  links:string;
 }
 
-const CTACard: React.FC<CTACardProps> = ({ title, subtitle, children }) => {
+const CTACard: React.FC<CTACardProps> = ({ title, subtitle, children,links }) => {
   return (
     <div className="rounded-lg border border-stroke bg-white px-7.5 py-6 shadow-sm dark:border-[#181818] dark:bg-[#181818] ">
       <div className="flex h-11.5 w-11.5 items-center justify-center rounded-full bg-meta-2 dark:bg-meta-4">
@@ -23,9 +25,12 @@ const CTACard: React.FC<CTACardProps> = ({ title, subtitle, children }) => {
         </div>
       </div>
       <div className="mt-2 w-min cursor-pointer rounded-full bg-[#64748b] p-2">
-        <span className=" text-sm text-white ">
+        {/* <span className=" text-sm text-white ">
           <ArrowRight size={20} />
-        </span>
+        </span> */}
+        <Link href={links} className="text-sm text-white flex items-center">
+          <ArrowRight size={20} />
+        </Link>
       </div>
     </div>
   );

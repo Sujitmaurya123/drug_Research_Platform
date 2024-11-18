@@ -1,11 +1,12 @@
-import Index from "@/components/Dashboard";
+
 import { Metadata } from "next";
 import DefaultLayout from "@/components/Layouts/DefaultLayout";
+import Index from "@/components/dashboard";
 
 export const metadata: Metadata = {
   title:
-    "Next.js E-commerce Dashboard | TailAdmin - Next.js Dashboard Template",
-  description: "This is Next.js Home for TailAdmin Dashboard Template",
+    "Drug Research Platform ",
+  description: "This is Next.js Home for Drug Research Platform",
 };
 
 export default function Home() {
@@ -14,6 +15,7 @@ export default function Home() {
       <DefaultLayout>
         <Index />
       </DefaultLayout>
+      
     </>
   );
 }

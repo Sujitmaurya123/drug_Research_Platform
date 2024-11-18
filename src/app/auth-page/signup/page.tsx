@@ -36,11 +36,13 @@ const SignUp: React.FC = () => {
       ...prev,
       [name]: value, // Ensure the value is treated as a string
     }));
+    
   };
 
   const handleFileChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const file = e.target.files ? e.target.files[0] : null;
     setImageFile(file);
+
   };
 
   const convertImageToBase64 = async (file: File): Promise<string> => {
@@ -121,7 +123,9 @@ const SignUp: React.FC = () => {
       });
       setImageFile(null);
       setIsLoading(false);
+      console.log(user);
     } catch (error) {
+      console.log(user);
       console.error("Error registering user:", error);
       setErrors("Registration failed.");
     } finally {
@@ -395,12 +399,14 @@ const SignUp: React.FC = () => {
                   </label>
                   <div className="relative">
                     <textarea
-                      name="bio"
+                    
+                      name="userBio"
                       value={user.userBio}
                       onChange={handleInputChange}
                       placeholder="Enter your bio"
                       className="w-full rounded-lg border border-stroke bg-transparent py-4 pl-6 pr-10 text-black outline-none focus:border-primary focus-visible:shadow-none dark:border-form-strokedark dark:bg-form-input dark:text-white dark:focus:border-primary"
                     />
+                    
                   </div>
                 </div>
 
