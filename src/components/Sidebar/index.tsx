@@ -15,6 +15,7 @@ import {
   Settings,
   MessageSquareText,
   ChevronLeft,
+  Pill, Globe
 } from "lucide-react";
 interface SidebarProps {
   sidebarOpen: boolean;
@@ -46,10 +47,21 @@ const menuGroups = [
         route: "/research",
       },
       {
+        icon: <Pill size={25} />,
+        label: "Drug Name",
+        route: "/drugname",
+      },
+      {
         icon: <MessageSquareText size={25} />,
         label: "Messages",
         route: "/message",
       },
+      {
+        icon: <Globe size={25} />,
+        label: "Drug News",
+        route: "/drugnews",
+      },
+      
     ],
   },
   {
