@@ -5,17 +5,31 @@ import React from "react";
 import CTACard from "./components/CTACard";
 import { AtomIcon, MessageCircle, Network, SearchIcon } from "lucide-react";
 
+// const DashboardCardMap = dynamic(
+//   () => import("@/components/Dashboard/components/DashboardCardMap"),
+//   {
+//     ssr: false,
+//   },
+// );
 const DashboardCardMap = dynamic(
-  () => import("@/components/Dashboard/components/DashboardCardMap"),
+  () => import("@/components/dashboard/components/DashboardCardMap"),
   {
     ssr: false,
+    loading: () => <p>Loading Map...</p>,
   },
 );
 
+// const DashboardCardChat = dynamic(
+//   () => import("@/components/Dashboard/components/DashboardCardChat"),
+//   {
+//     ssr: false,
+//   },
+// );
 const DashboardCardChat = dynamic(
-  () => import("@/components/Dashboard/components/DashboardCardChat"),
+  () => import("@/components/dashboard/components/DashboardCardChat"),
   {
     ssr: false,
+    loading: () => <p>Loading Chat...</p>,
   },
 );
 

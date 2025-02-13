@@ -9,7 +9,7 @@ const DarkModeSwitcher = () => {
         colorMode === "dark" ? "bg-primary" : "bg-stroke"
       }`}
     >
-      <input
+      <input title="checkbox"
         type="checkbox"
         onChange={() => {
           if (typeof setColorMode === "function") {
